@@ -1,0 +1,497 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap");
+.flex {
+  display: flex; }
+
+.flex-row {
+  display: flex;
+  flex-direction: row; }
+
+.flex-column {
+  display: flex;
+  flex-direction: column; }
+
+.flex-1 {
+  flex: 1; }
+
+.align-center {
+  align-items: center; }
+
+.justify-center {
+  justify-content: center; }
+
+.flex-center-center {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.text-align-center {
+  text-align: center; }
+
+.margin-top-2 {
+  margin-top: 100px; }
+
+.margin-top-3 {
+  margin-top: 200px; }
+
+.object-inliner {
+  display: flex;
+  align-items: center;
+  flex: 0 1 auto;
+  gap: 12px;
+  width: auto; }
+
+.gap-4 {
+  gap: 0.25rem; }
+
+.gap-8 {
+  gap: 0.5rem; }
+
+.gap-12 {
+  gap: 0.8rem; }
+
+.gap-16 {
+  gap: 1rem; }
+
+.gap-20 {
+  gap: 1.25rem; }
+
+.gap-24 {
+  gap: 1.50rem; }
+
+.padding-bottom-4 {
+  padding-bottom: 0.25rem; }
+
+.padding-bottom-8 {
+  padding-bottom: 0.5rem; }
+
+.padding-bottom-12 {
+  padding-bottom: 1.8rem; }
+
+.padding-bottom-16 {
+  padding-bottom: 1rem; }
+
+.padding-bottom-20 {
+  padding-bottom: 1.25rem; }
+
+.padding-bottom-24 {
+  padding-bottom: 1.50rem; }
+
+.margin-bottom-4 {
+  margin-bottom: 0.25rem; }
+
+.margin-bottom-8 {
+  margin-bottom: 0.5rem; }
+
+.margin-bottom-12 {
+  margin-bottom: 1.8rem; }
+
+.margin-bottom-16 {
+  margin-bottom: 1rem; }
+
+.margin-bottom-20 {
+  margin-bottom: 1.25rem; }
+
+.margin-bottom-24 {
+  margin-bottom: 1.50rem; }
+
+.margin-bottom-36 {
+  margin-bottom: 2.25rem; }
+
+.margin-bottom-48 {
+  margin-bottom: 2.5rem; }
+
+.margin-bottom-52 {
+  margin-bottom: 3.25rem; }
+
+.pregame-margin-bottom {
+  margin-bottom: 9rem; }
+
+.game-margin-bottom {
+  margin-bottom: 6rem; }
+
+h1 {
+  font-family: 'Open-Sans', sans-serif;
+  font-size: 50px;
+  line-height: 50px; }
+
+h2 {
+  font-family: 'Open-Sans', sans-serif;
+  font-size: 1.6rem;
+  line-height: 2.7rem;
+  font-weight: bold; }
+  h2.name {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%;
+    display: block; }
+
+h3 {
+  font-family: 'Open-Sans', sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.2rem; }
+
+h4 {
+  font-family: 'Open-Sans', sans-serif;
+  font-size: 1rem;
+  line-height: 1.6rem; }
+  h4.name {
+    font-weight: bold;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%;
+    display: block; }
+
+h5 {
+  font-family: 'Open-Sans', sans-serif;
+  font-size: 0.8rem;
+  line-height: 0.8rem; }
+
+h6 {
+  font-family: 'Open-Sans', sans-serif;
+  font-size: 0.8rem;
+  line-height: 0.8rem;
+  letter-spacing: 1px;
+  text-transform: uppercase; }
+
+a {
+  text-decoration: none;
+  color: #FFFFFF; }
+
+.fas {
+  font-size: 16px; }
+
+.bold {
+  font-weight: bold; }
+
+.logo {
+  max-width: 140px; }
+
+.logo-big {
+  max-width: 250px; }
+
+.avatar {
+  border-radius: 50%;
+  background: #FFFFFF; }
+  .avatar.small {
+    height: 48px;
+    width: 48px;
+    border: 2px solid #FFFFFF; }
+  .avatar.difficulty-level {
+    height: 100px;
+    width: 100px;
+    border: 1px solid #FFFFFF; }
+    .avatar.difficulty-level:hover {
+      opacity: 0.7;
+      cursor: pointer; }
+  .avatar.player {
+    height: 100px;
+    width: 100px;
+    border: 2px solid #FFFFFF; }
+    .avatar.player.active {
+      border: 4px solid #FFE245; }
+    .avatar.player.inactive {
+      opacity: 0.7; }
+  .avatar.winner {
+    width: 165px;
+    height: 165px;
+    border: 6px solid #FFE245; }
+
+.symbol {
+  width: 60px;
+  background: #FFFFFF;
+  padding: 4px;
+  border-radius: 50%;
+  border: 3px solid #FFFFFF; }
+  .symbol:hover {
+    cursor: pointer;
+    border-color: #FFE245; }
+  .symbol.indicator {
+    position: absolute;
+    width: 55px;
+    top: -15px;
+    right: -16px; }
+    .symbol.indicator.active {
+      border: 3px solid #FFE245; }
+
+button, .button {
+  background: #FFFFFF;
+  border-radius: 4px;
+  border: none;
+  display: inline-block;
+  font-family: 'Open-Sans', sans-serif;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 0.25rem 0.8rem;
+  text-align: center;
+  text-decoration: none;
+  white-space: nowrap;
+  color: #8d78c7;
+  width: 100%; }
+  button:hover, .button:hover {
+    background-color: #EAEAEA;
+    cursor: pointer; }
+  button.big, .button.big {
+    padding: 0.5rem 2rem; }
+  button.primary, .button.primary {
+    background-color: #8d78c7;
+    border: none; }
+    button.primary:hover, .button.primary:hover {
+      background-color: #7967aa; }
+  button.outline, .button.outline {
+    background: none;
+    border: 2px solid #FFFFFF;
+    color: #FFFFFF; }
+    button.outline:hover, .button.outline:hover {
+      background-color: #7967aa; }
+  button .with-icon, .button .with-icon {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem; }
+
+input {
+  border-radius: 4px;
+  border: 2px solid #FFFFFF;
+  line-height: 24px;
+  background: none;
+  color: white;
+  padding: 0.5rem;
+  min-width: 320px; }
+  input.full-width {
+    width: 350px; }
+  input:active {
+    background: #7967aa;
+    box-shadow: none; }
+  input:focus-visible {
+    background: #7967aa;
+    box-shadow: none;
+    outline: none; }
+  input::placeholder {
+    color: #FFFFFF;
+    opacity: 0.5; }
+
+.difficulty-level-row {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 2.5rem; }
+
+.pregame-margin-bottom {
+  margin-bottom: 8rem; }
+
+.game-field {
+  background: #FFFFFF;
+  box-shadow: 2px 7px 8px 3px #7967aa;
+  border-radius: 8px;
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-areas: 'grid-1 grid-2 grid-3' 'grid-4 grid-5 grid-6' 'grid-7 grid-8 grid-9';
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  margin-bottom: 1.5rem; }
+  .game-field .symbol {
+    height: 80px;
+    width: 80px;
+    display: none; }
+    .game-field .symbol.active {
+      display: block;
+      background: #EAEAEA; }
+      .game-field .symbol.active:hover {
+        border: #FFFFFF; }
+
+.field-square {
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .field-square.highlight {
+    background: #FFE245;
+    border-radius: 4px; }
+  .field-square:hover {
+    cursor: pointer; }
+  .field-square.preview-1:hover .racoon {
+    display: block;
+    background: #EAEAEA;
+    border: 2px solid #FFE245; }
+  .field-square.preview-2:hover .husky {
+    display: block;
+    background: #EAEAEA;
+    border: 2px solid #FFE245; }
+
+.grid-1 {
+  grid-area: grid-1;
+  border-right: 2px solid #EAEAEA;
+  border-bottom: 2px solid #EAEAEA; }
+
+.grid-2 {
+  grid-area: grid-2;
+  border-right: 2px solid #EAEAEA;
+  border-bottom: 2px solid #EAEAEA; }
+
+.grid-3 {
+  grid-area: grid-3;
+  border-bottom: 2px solid #EAEAEA; }
+
+.grid-4 {
+  grid-area: grid-4;
+  border-right: 2px solid #EAEAEA;
+  border-bottom: 2px solid #EAEAEA; }
+
+.grid-5 {
+  grid-area: grid-5;
+  border-right: 2px solid #EAEAEA;
+  border-bottom: 2px solid #EAEAEA; }
+
+.grid-6 {
+  grid-area: grid-6;
+  border-bottom: 2px solid #EAEAEA; }
+
+.grid-7 {
+  grid-area: grid-7;
+  border-right: 2px solid #EAEAEA; }
+
+.grid-8 {
+  grid-area: grid-8;
+  border-right: 2px solid #EAEAEA; }
+
+.grid-9 {
+  grid-area: grid-9; }
+
+.game-history {
+  display: flex;
+  gap: 0.8rem;
+  overflow-y: auto; }
+  .game-history .game-field {
+    max-width: 150px;
+    max-height: 150px;
+    grid-template-columns: 50px 50px 50px;
+    grid-template-rows: 50px 50px 50px;
+    box-shadow: 0 6px 5px 1px #7967aa; }
+    .game-history .game-field .symbol {
+      height: 35px;
+      width: 35px; }
+    .game-history .game-field .field-square {
+      height: 50px; }
+      .game-history .game-field .field-square:hover {
+        cursor: auto; }
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box; }
+
+html {
+  font-size: 16px;
+  width: 100%;
+  height: 100%; }
+
+body {
+  width: 100%;
+  height: 100%;
+  background: #8d78c7;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: #FFFFFF; }
+
+.container {
+  margin: 0 auto;
+  height: 100%; }
+  .container.max-width-380 {
+    max-width: 380px; }
+  .container.full-width {
+    margin: 0 16px; }
+  .container.inset {
+    max-width: 350px; }
+  .container.responsive {
+    max-width: 540px; }
+  .container.game-layout {
+    margin-top: 1.6rem; }
+  .container.utility-layout {
+    margin-top: 10rem; }
+
+.card {
+  padding: 2rem 0.8rem 2.2rem 0.8rem;
+  margin-top: 150px;
+  border-radius: 8px;
+  background: #FFFFFF;
+  box-shadow: 1px 3px 4px 1px #7967aa; }
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 12px; }
+
+.fas {
+  color: #FFFFFF;
+  margin: 0 0 14px 14px; }
+  .fas:hover {
+    cursor: pointer;
+    color: #EAEAEA; }
+
+.vertical-stack {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  gap: 0.6rem; }
+
+ul.symbol-row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+  gap: 0.5rem; }
+
+.players-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.5rem; }
+
+.players-column {
+  position: relative;
+  width: 120px;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  height: auto; }
+
+@media (max-width: 500px) {
+  .logo-big {
+    max-width: 220px; }
+
+  .pregame-margin-bottom {
+    margin-bottom: 6rem; } }
+@media (max-width: 300px) {
+  .difficulty-level-row {
+    gap: 0.6rem;
+    margin-bottom: 1.8rem; }
+
+  .avatar-difficulty-level {
+    height: 75px;
+    width: 75px; } }
+@media (max-width: 600px) {
+  .container .responsive {
+    max-width: 360px; }
+
+  .field-square {
+    height: 120px; } }
+@media (max-width: 750px) {
+  .game-history {
+    gap: 0.5rem; }
+    .game-history .game-field {
+      max-width: 120px;
+      max-height: 120px;
+      grid-template-columns: 40px 40px 40px;
+      grid-template-rows: 40px 40px 40px;
+      box-shadow: 0 6px 5px 1px #7967aa; }
+      .game-history .game-field .symbol {
+        height: 30px;
+        width: 30px; }
+      .game-history .game-field .field-square {
+        height: 40px; } }
+
+/*# sourceMappingURL=main.css.map */

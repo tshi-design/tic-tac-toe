@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap');
+@import 'variables';
+@import 'mini-classes';
+@import 'typography';
+@import 'media';
+@import 'forms';
+@import'difficulty-level';
+@import 'game-field';
+
+
+
+
+*,
+*:before,
+*:after {
+ box-sizing: border-box;
+}
+
+html {
+ font-size: 16px;
+ width: 100%;
+ height: 100%;
+}
+
+body {
+ width: 100%;
+ height: 100%;
+ background: $primary;
+ font-family: 'Open Sans', sans-serif;
+ font-size: 1rem;
+ line-height: 1.5rem;
+ color: $white;
+}
+
+.container {
+ margin: 0 auto;
+ height: 100%;
+
+ &.max-width-380 {
+  max-width: 380px;
+ }
+
+ &.full-width {
+  margin: 0 16px;
+ }
+
+ &.inset {
+  max-width: 350px;
+ }
+
+ &.responsive {
+  max-width: 540px;
+ }
+
+ &.game-layout {
+margin-top: 1.6rem;
+ }
+
+ &.utility-layout {
+  margin-top: 10rem;
+ }
+}
+
+.card {
+ padding: 2rem 0.8rem 2.2rem 0.8rem;
+ margin-top: 150px;
+ border-radius: 8px;
+ background: $white;
+ box-shadow: 1px 3px 4px 1px $primary-shadow;
+
+}
+
+.nav {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ padding-top: 12px;
+}
+
+.fas {
+ color: $white;
+ margin: 0 0 14px 14px;
+
+ &:hover {
+  cursor: pointer;
+  color: $white-hover
+ }
+}
+
+.vertical-stack {
+ display: flex;
+ flex-direction: column;
+ align-content: center;
+ justify-content: center;
+ gap: 0.6rem;
+}
+
+ul.symbol-row {
+ display: flex;
+ justify-content: center;
+ flex-wrap: wrap;
+ margin-bottom: 1.5rem;
+ gap: 0.5rem;
+}
+
+.players-row {
+ display: flex;
+ justify-content: space-between;
+ margin-bottom: 1.5rem;
+}
+
+.players-column {
+ position: relative;
+ width: 120px;
+ align-items: center;
+ align-content: center;
+ text-align: center;
+ height: auto;
+}
+
+@media (max-width: 500px) {
+ .logo-big {
+  max-width: 220px;
+ }
+
+ .pregame-margin-bottom {
+  margin-bottom: 6rem;
+ }
+}
+
+@media (max-width: 300px) {
+
+ .difficulty-level-row {
+  gap: 0.6rem;
+  margin-bottom: 1.8rem;
+ }
+
+ .avatar-difficulty-level {
+  height: 75px;
+  width: 75px;
+ }
+}
+
+@media (max-width: 600px) {
+ .container {
+  .responsive {
+   max-width: 360px;
+  }
+ }
+
+ .field-square {
+  height: 120px;
+ }
+}
+
+@media (max-width: 750px) {
+
+ .game-history {
+  gap: 0.5rem;
+
+  .game-field {
+   max-width: 120px;
+   max-height: 120px;
+   grid-template-columns: 40px 40px 40px;
+   grid-template-rows: 40px 40px 40px;
+   box-shadow: 0 6px 5px 1px $primary-shadow;
+
+   .symbol {
+    height: 30px;
+    width: 30px;
+   }
+
+   .field-square {
+    height: 40px;
+
+   }
+  }
+ }
+}

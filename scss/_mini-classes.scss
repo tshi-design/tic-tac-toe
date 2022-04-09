@@ -1,0 +1,144 @@
+.flex {
+  display: flex;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.flex-center-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+.margin-top-2 {
+  margin-top: 100px;
+}
+
+.margin-top-3 {
+  margin-top: 200px;
+}
+
+.object-inliner {
+  display: flex;
+  align-items: center;
+  flex: 0 1 auto;
+  gap: 12px;
+  width: auto;
+}
+
+.gap-4 {
+  gap: 0.25rem;
+}
+
+.gap-8 {
+  gap: 0.5rem;
+}
+
+.gap-12 {
+  gap: 0.8rem;
+}
+
+.gap-16 {
+  gap: 1rem;
+}
+
+.gap-20 {
+  gap: 1.25rem;
+}
+
+.gap-24 {
+  gap: 1.50rem;
+}
+
+.padding-bottom-4 {
+  padding-bottom: 0.25rem;
+}
+
+.padding-bottom-8 {
+  padding-bottom: 0.5rem;
+}
+
+.padding-bottom-12 {
+  padding-bottom: 1.8rem;
+}
+
+.padding-bottom-16 {
+  padding-bottom: 1rem;
+}
+
+.padding-bottom-20 {
+  padding-bottom: 1.25rem;
+}
+
+.padding-bottom-24 {
+  padding-bottom: 1.50rem;
+}
+
+.margin-bottom-4 {
+  margin-bottom: 0.25rem;
+}
+
+.margin-bottom-8 {
+  margin-bottom: 0.5rem;
+}
+
+.margin-bottom-12 {
+  margin-bottom: 1.8rem;
+}
+
+.margin-bottom-16 {
+  margin-bottom: 1rem;
+}
+
+.margin-bottom-20 {
+  margin-bottom: 1.25rem;
+}
+
+.margin-bottom-24 {
+  margin-bottom: 1.50rem;
+}
+
+.margin-bottom-36 {
+  margin-bottom: 2.25rem;
+}
+
+.margin-bottom-48 {
+  margin-bottom: 2.5rem;
+}
+
+.margin-bottom-52 {
+  margin-bottom: 3.25rem;
+}
+
+.pregame-margin-bottom {
+  margin-bottom: 9rem;
+}
+
+.game-margin-bottom {
+  margin-bottom: 6rem;
+}
+

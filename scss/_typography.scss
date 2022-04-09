@@ -1,0 +1,70 @@
+h1 {
+  font-family: 'Open-Sans', sans-serif;
+  font-size: 50px;
+  line-height: 50px;
+}
+
+h2 {
+  font-family: 'Open-Sans', sans-serif;
+  font-size: 1.6rem;
+  line-height: 2.7rem;
+  font-weight: bold;
+
+  &.name {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%;
+    display: block;
+  }
+}
+
+h3 {
+  font-family: 'Open-Sans', sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.2rem;
+}
+
+h4 {
+  font-family: 'Open-Sans', sans-serif;
+  font-size: 1rem;
+  line-height: 1.6rem;
+
+
+  &.name {
+    font-weight: bold;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%;
+    display: block;
+  }
+}
+
+h5 {
+  font-family: 'Open-Sans', sans-serif;
+  font-size: 0.8rem;
+  line-height: 0.8rem;
+}
+
+h6 {
+  font-family: 'Open-Sans', sans-serif;
+  font-size: 0.8rem;
+  line-height: 0.8rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+a {
+  text-decoration: none;
+  color: $white;
+
+}
+
+.fas {
+  font-size: 16px;
+}
+
+.bold {
+  font-weight: bold;
+}
