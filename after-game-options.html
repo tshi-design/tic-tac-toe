@@ -4,9 +4,9 @@
   <meta charset="UTF-8"/>
   <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Enter your name</title>
-  <link rel="stylesheet" href="css/normalize.css" type="text/css"/>
-  <link rel="stylesheet" href="css/main.css"/>
+  <title>Home page</title>
+  <link rel="stylesheet" href="dist/css/normalize.css" type="text/css"/>
+  <link rel="stylesheet" href="dist/css/main.css"/>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"
           integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   <script src="https://kit.fontawesome.com/9f481dee3a.js" crossorigin="anonymous"></script>
@@ -14,30 +14,24 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap"
         rel="stylesheet">
+
 </head>
 <body>
 
 <section>
   <div class="container full-width ">
     <div class="nav">
-      <a href="index.html"><i class="fas fa-chevron-left"></i></a>
-      <a href="index.html"><img src="/public/images/logo.png" class="logo"/></a>
+      <span></span>
+      <a href="index.html"><img src="/public/images/logo.png" class="logo align-center"/></a>
       <span><i class="fas fa-bars"></i></span>
     </div>
-
-    <div class="container max-width-380 utility-layout justify-center">
-      <h2 class="text-align-center margin-bottom-20">Enter Name For Player 1</h2>
-      <div class="flex">
-        <div class="object-inliner margin-bottom-24">
-          <img src="/public/images/ttt-avatar-1.png" class="avatar small"/>
-          <input type="text" placeholder="Enter your name in a game">
-        </div>
-      </div>
-      <div class="flex-row justify-center">
-        <a href="pick-simbol-4-player-1.html" class="button big">Continue</a>
-      </div>
+    <div class="container max-width-380 utility-layout vertical-stack">
+      <a href="index.html" class="button big">Play Again</a>
+      <a href="index.html" class="button big outline">Start New Game</a>
+      <a href="index.html" class="button big outline">Exit</a>
     </div>
   </div>
 </section>
+
 </body>
 </html>

@@ -5,8 +5,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Home page</title>
-  <link rel="stylesheet" href="css/normalize.css" type="text/css"/>
-  <link rel="stylesheet" href="css/main.css"/>
+  <link rel="stylesheet" href="dist/css/normalize.css" type="text/css"/>
+  <link rel="stylesheet" href="dist/css/main.css"/>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"
           integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   <script src="https://kit.fontawesome.com/9f481dee3a.js" crossorigin="anonymous"></script>
@@ -22,16 +22,28 @@
   <div class="container full-width ">
     <div class="nav">
       <span></span>
-      <a href="index.html"><img src="/public/images/logo.png" class="logo align-center"/></a>
+      <a href="index.html">
+        <img src="/public/images/logo.png" class="logo align-center"/>
+      </a>
       <span><i class="fas fa-bars"></i></span>
     </div>
-    <div class="container max-width-380 utility-layout vertical-stack">
-      <a href="index.html" class="button big">Play Again</a>
-      <a href="index.html" class="button big outline">Start New Game</a>
-      <a href="index.html" class="button big outline">Exit</a>
+    <div class="container utility-layout max-width-380 vertical-stack">
+      <div class="button outline">
+        <a href="difficulty-level.html">
+          <div class="object-inliner">
+            <img src="/public/images/ttt-level-1-01.png" class="avatar small"/>
+            <h3 class="bold">Play with Computer</h3></div>
+        </a>
+      </div>
+      <div class="button outline">
+        <a href="name-4-player-1.html">
+          <div class="object-inliner ">
+            <img src="/public/images/ttt-avatar-2-01.png" class="avatar small"/>
+            <h3 class="bold">Play with Friend</h3></div>
+        </a>
+      </div>
     </div>
   </div>
 </section>
-
 </body>
 </html>
