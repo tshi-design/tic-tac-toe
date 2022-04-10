@@ -41,10 +41,15 @@ button, .button {
     }
   }
 
-  .with-icon {
+  &.with-icon {
     display: flex;
     align-items: center;
     gap: 0.25rem;
+  }
+
+  &.circle {
+    border-radius: 50%;
+    padding: 3rem 1.8rem;
   }
 }
 

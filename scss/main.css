@@ -245,10 +245,13 @@ button, .button {
     color: #FFFFFF; }
     button.outline:hover, .button.outline:hover {
       background-color: #7967aa; }
-  button .with-icon, .button .with-icon {
+  button.with-icon, .button.with-icon {
     display: flex;
     align-items: center;
     gap: 0.25rem; }
+  button.circle, .button.circle {
+    border-radius: 50%;
+    padding: 3rem 1.8rem; }
 
 input {
   border-radius: 4px;
@@ -411,6 +414,8 @@ body {
     margin-top: 1.6rem; }
   .container.utility-layout {
     margin-top: 10rem; }
+  .container.presentation-button {
+    margin: -2rem 0 0 auto; }
 
 .card {
   padding: 2rem 0.8rem 2.2rem 0.8rem;
