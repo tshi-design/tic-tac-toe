@@ -5,12 +5,13 @@
   height: 100%;
   width: 100%;
   display: grid;
-  grid-template-areas: 'grid-1 grid-2 grid-3'
-'grid-4 grid-5 grid-6'
-'grid-7 grid-8 grid-9';
+  grid-template-areas: 'top-left top-center top-rightt'
+'middle-left middle-center middle-right'
+'bottom-left bottom-center bottom-right';
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
-  margin-bottom: 1.5rem;
+  margin-bottom: 0.5rem;
+  position: relative;
 
 
   .symbol {
@@ -66,52 +67,52 @@
 
 
 
-.grid-1 {
-  grid-area: grid-1;
+.top-left {
+  grid-area: top-left;
   border-right: 2px solid $white-hover;
   border-bottom: 2px solid $white-hover;
 }
 
-.grid-2 {
-  grid-area: grid-2;
+.top-center {
+  grid-area: top-center;
   border-right: 2px solid $white-hover;
   border-bottom: 2px solid $white-hover;
 }
 
-.grid-3 {
-  grid-area: grid-3;
+.top-rightt {
+  grid-area: top-rightt;
   border-bottom: 2px solid $white-hover;
 }
 
-.grid-4 {
-  grid-area: grid-4;
+.middle-left {
+  grid-area: middle-left;
   border-right: 2px solid $white-hover;
   border-bottom: 2px solid $white-hover;
 }
 
-.grid-5 {
-  grid-area: grid-5;
+.middle-center {
+  grid-area: middle-center;
   border-right: 2px solid $white-hover;
   border-bottom: 2px solid $white-hover;
 }
 
-.grid-6 {
-  grid-area: grid-6;
+.middle-right {
+  grid-area: middle-right;
   border-bottom: 2px solid $white-hover;
 }
 
-.grid-7 {
-  grid-area: grid-7;
+.bottom-left {
+  grid-area: bottom-left;
   border-right: 2px solid $white-hover;
 }
 
-.grid-8 {
-  grid-area: grid-8;
+.bottom-center {
+  grid-area: bottom-center;
   border-right: 2px solid $white-hover;
 }
 
-.grid-9 {
-  grid-area: grid-9;
+.bottom-right {
+  grid-area: bottom-right;
 }
 
 .game-history {
@@ -129,6 +130,11 @@
     .symbol {
       height: 35px;
       width: 35px;
+
+      &:hover{
+        cursor: auto;
+        border: 3px solid $white;
+      }
     }
 
     .field-square {
@@ -137,6 +143,9 @@
       &:hover {
         cursor: auto;
       }
+    }
+    a {
+      cursor: auto;
     }
   }
 }

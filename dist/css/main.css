@@ -185,16 +185,17 @@ a {
 .avatar.difficulty-level {
   height: 100px;
   width: 100px;
-  border: 1px solid #FFFFFF; }
+  border: 3px solid #FFFFFF; }
 
 .avatar.difficulty-level:hover {
-  opacity: 0.7;
-  cursor: pointer; }
+  cursor: pointer;
+  border: 3px solid #FFE245; }
 
 .avatar.player {
   height: 100px;
   width: 100px;
-  border: 2px solid #FFFFFF; }
+  border: 2px solid #FFFFFF;
+  padding: 10px; }
 
 .avatar.player.active {
   border: 4px solid #FFE245; }
@@ -203,9 +204,10 @@ a {
   opacity: 0.7; }
 
 .avatar.winner {
-  width: 165px;
-  height: 165px;
-  border: 6px solid #FFE245; }
+  width: 145px;
+  height: 145px;
+  border: 6px solid #FFE245;
+  padding: 10px; }
 
 .symbol {
   width: 60px;
@@ -221,11 +223,20 @@ a {
 .symbol.indicator {
   position: absolute;
   width: 55px;
+  height: 55px;
   top: -15px;
-  right: -16px; }
+  right: -16px;
+  display: flex; }
 
 .symbol.indicator.active {
   border: 3px solid #FFE245; }
+
+.symbol.indicator.inactive {
+  background: #dcd6ef;
+  border-color: #dcd6ef; }
+
+.symbol.indicator.inactive img {
+  opacity: 0.7; }
 
 button, .button {
   background: #FFFFFF;
@@ -271,7 +282,14 @@ button.with-icon, .button.with-icon {
 
 button.circle, .button.circle {
   border-radius: 50%;
-  padding: 3rem 1.8rem; }
+  padding: 35px 13px;
+  max-width: 97px; }
+
+.continue {
+  position: absolute;
+  bottom: -30px;
+  right: -40px;
+  box-shadow: 2px 2px 8px 0 #7967aa; }
 
 input {
   border-radius: 4px;
@@ -314,10 +332,11 @@ input::placeholder {
   height: 100%;
   width: 100%;
   display: grid;
-  grid-template-areas: 'grid-1 grid-2 grid-3' 'grid-4 grid-5 grid-6' 'grid-7 grid-8 grid-9';
+  grid-template-areas: 'top-left top-center top-rightt' 'middle-left middle-center middle-right' 'bottom-left bottom-center bottom-right';
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
-  margin-bottom: 1.5rem; }
+  margin-bottom: 0.5rem;
+  position: relative; }
 
 .game-field .symbol {
   height: 80px;
@@ -354,44 +373,44 @@ input::placeholder {
   background: #EAEAEA;
   border: 2px solid #FFE245; }
 
-.grid-1 {
-  grid-area: grid-1;
+.top-left {
+  grid-area: top-left;
   border-right: 2px solid #EAEAEA;
   border-bottom: 2px solid #EAEAEA; }
 
-.grid-2 {
-  grid-area: grid-2;
+.top-center {
+  grid-area: top-center;
   border-right: 2px solid #EAEAEA;
   border-bottom: 2px solid #EAEAEA; }
 
-.grid-3 {
-  grid-area: grid-3;
+.top-rightt {
+  grid-area: top-rightt;
   border-bottom: 2px solid #EAEAEA; }
 
-.grid-4 {
-  grid-area: grid-4;
+.middle-left {
+  grid-area: middle-left;
   border-right: 2px solid #EAEAEA;
   border-bottom: 2px solid #EAEAEA; }
 
-.grid-5 {
-  grid-area: grid-5;
+.middle-center {
+  grid-area: middle-center;
   border-right: 2px solid #EAEAEA;
   border-bottom: 2px solid #EAEAEA; }
 
-.grid-6 {
-  grid-area: grid-6;
+.middle-right {
+  grid-area: middle-right;
   border-bottom: 2px solid #EAEAEA; }
 
-.grid-7 {
-  grid-area: grid-7;
+.bottom-left {
+  grid-area: bottom-left;
   border-right: 2px solid #EAEAEA; }
 
-.grid-8 {
-  grid-area: grid-8;
+.bottom-center {
+  grid-area: bottom-center;
   border-right: 2px solid #EAEAEA; }
 
-.grid-9 {
-  grid-area: grid-9; }
+.bottom-right {
+  grid-area: bottom-right; }
 
 .game-history {
   display: flex;
@@ -409,10 +428,17 @@ input::placeholder {
   height: 35px;
   width: 35px; }
 
+.game-history .game-field .symbol:hover {
+  cursor: auto;
+  border: 3px solid #FFFFFF; }
+
 .game-history .game-field .field-square {
   height: 50px; }
 
 .game-history .game-field .field-square:hover {
+  cursor: auto; }
+
+.game-history .game-field a {
   cursor: auto; }
 
 *,
@@ -438,6 +464,9 @@ body {
   margin: 0 auto;
   height: 100%; }
 
+.container.max-width-280 {
+  max-width: 280px; }
+
 .container.max-width-380 {
   max-width: 380px; }
 
@@ -455,9 +484,6 @@ body {
 
 .container.utility-layout {
   margin-top: 10rem; }
-
-.container.presentation-button {
-  margin: -2rem 0 0 auto; }
 
 .card {
   padding: 2rem 0.8rem 2.2rem 0.8rem;
@@ -492,7 +518,7 @@ ul.symbol-row {
   justify-content: center;
   flex-wrap: wrap;
   margin-bottom: 1.5rem;
-  gap: 0.5rem; }
+  gap: 0.3rem; }
 
 .players-row {
   display: flex;
@@ -501,11 +527,13 @@ ul.symbol-row {
 
 .players-column {
   position: relative;
-  width: 120px;
   align-items: center;
   align-content: center;
   text-align: center;
   height: auto; }
+
+.game-history {
+  padding-left: 5px; }
 
 @media (max-width: 500px) {
   .logo-big {
@@ -521,11 +549,32 @@ ul.symbol-row {
     height: 75px;
     width: 75px; } }
 
-@media (max-width: 600px) {
+@media (max-width: 460px) {
+  .continue {
+    bottom: 13px;
+    right: 13px;
+    box-shadow: 0 1px 5px 0 #8d78c7; } }
+
+@media (max-width: 1370px) {
+  .players-row {
+    justify-content: center;
+    gap: 6rem;
+    margin-bottom: 0.8rem; }
   .container .responsive {
     max-width: 360px; }
   .field-square {
-    height: 120px; } }
+    height: 120px; }
+  .game-field .symbol {
+    height: 65px;
+    width: 65px; }
+  .avatar.player {
+    height: 80px;
+    width: 80px; }
+  .symbol.indicator {
+    width: 40px;
+    height: 40px;
+    top: -11px;
+    right: 3px; } }
 
 @media (max-width: 750px) {
   .game-history {
@@ -541,5 +590,39 @@ ul.symbol-row {
     width: 30px; }
   .game-history .game-field .field-square {
     height: 40px; } }
+
+@media (max-height: 700px) and (max-width: 400px) {
+  .container .responsive {
+    max-width: 300px; }
+  .field-square {
+    height: 100px; }
+  .game-field .symbol {
+    height: 60px;
+    width: 60px; }
+  .players-row {
+    gap: 4rem; }
+  .button.continue {
+    bottom: 3px;
+    right: 3px;
+    box-shadow: 0 1px 5px 0 #8d78c7;
+    font-size: 0.8rem; }
+  .button.circle {
+    padding: 28px 8px;
+    max-width: 81px;
+    bottom: -21px;
+    right: -28px; } }
+
+@media (min-height: 670px) {
+  .game-field {
+    margin-bottom: 1.2rem; } }
+
+@media (max-width: 300px) {
+  .container .responsive {
+    max-width: 270px; }
+  .field-square {
+    height: 90px; }
+  .game-field .symbol {
+    height: 50px;
+    width: 50px; } }
 
 /*# sourceMappingURL=main.css.map */
