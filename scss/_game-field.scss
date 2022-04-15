@@ -1,6 +1,5 @@
 .game-field {
   background: $white;
-  box-shadow: 2px 7px 8px 3px $primary-shadow;
   border-radius: 8px;
   height: 100%;
   width: 100%;
@@ -36,7 +35,6 @@
 
   &.highlight {
     background: $yellow;
-    border-radius: 4px;
   }
 
   &:hover {
@@ -66,11 +64,11 @@
 }
 
 
-
 .top-left {
   grid-area: top-left;
   border-right: 2px solid $white-hover;
   border-bottom: 2px solid $white-hover;
+  border-radius: 8px 0 0 0 ;
 }
 
 .top-center {
@@ -82,6 +80,7 @@
 .top-rightt {
   grid-area: top-rightt;
   border-bottom: 2px solid $white-hover;
+  border-radius: 0 8px 0 0 ;
 }
 
 .middle-left {
@@ -104,6 +103,7 @@
 .bottom-left {
   grid-area: bottom-left;
   border-right: 2px solid $white-hover;
+  border-radius: 0 0 0 8px;
 }
 
 .bottom-center {
@@ -125,7 +125,6 @@
     max-height: 150px;
     grid-template-columns: 50px 50px 50px;
     grid-template-rows: 50px 50px 50px;
-    box-shadow: 0 6px 5px 1px $primary-shadow;
 
     .symbol {
       height: 35px;
