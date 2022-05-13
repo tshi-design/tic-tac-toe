@@ -23,11 +23,19 @@ html {
 body {
   width: 100%;
   height: 100%;
-  background: url("/dist/public/images/backgrounds/abstract-background-02.png") no-repeat center center/cover;
+  background: linear-gradient(138deg, rgba(142,82,170,1) 0%, rgba(140,104,219,1) 59%, rgba(139,104,219,1) 69%, rgba(155,69,182,1) 98%)no-repeat;
+  margin: 0;
+  background-attachment: fixed;
   font-family: 'Open Sans', sans-serif;
   font-size: 1rem;
   line-height: 1.5rem;
   color: $white;
+}
+
+.splash-screen {
+  background: url("/dist/public/images/backgrounds/splash-screen-01.png") no-repeat center center/cover;
+  width: 100%;
+  height: 100%;
 }
 
 .container {
@@ -140,12 +148,24 @@ ul.symbol-row {
 
   .difficulty-level-row {
     gap: 0.6rem;
-    margin-bottom: 1.8rem;
+    margin-bottom: 0.4rem;
   }
 
   .avatar-difficulty-level {
     height: 75px;
     width: 75px;
+  }
+
+  ul.symbol-row {
+    margin-bottom: 0.5rem;
+  }
+
+  .nav {
+    margin-bottom: 1rem;
+  }
+
+  .container.utility-layout {
+    margin-top: 5rem;
   }
 }
 
@@ -158,6 +178,10 @@ ul.symbol-row {
 }
 
 @media (max-width: 1370px) {
+
+  .splash-screen {
+    background: url("/dist/public/images/backgrounds/splash-screen-02-02.png") no-repeat center center/cover;
+  }
 
   .players-row {
     justify-content: center;
@@ -196,6 +220,12 @@ ul.symbol-row {
   }
 }
 
+@media (max-width: 920px) {
+  .splash-screen {
+    background: url("/dist/public/images/backgrounds/splash-screen-mobile-03-03.png") no-repeat center center/cover;
+  }
+}
+
 @media (max-width: 750px) {
   .game-history {
     gap: 0.5rem;
@@ -217,6 +247,7 @@ ul.symbol-row {
       }
     }
   }
+
 }
 
 @media (max-height: 700px) and (max-width: 400px) {
@@ -239,7 +270,7 @@ ul.symbol-row {
   }
 
   .players-row {
-    gap: 4rem;
+    gap: 2rem;
 
   }
 
@@ -257,6 +288,11 @@ ul.symbol-row {
       bottom: -21px;
       right: -28px;
     }
+
+    &.home {
+      bottom: 25px;
+      right: 25px;
+    }
   }
 
 }
@@ -264,6 +300,14 @@ ul.symbol-row {
 @media (min-height: 670px) {
   .game-field {
     margin-bottom: 1.2rem;
+  }
+
+}
+
+@media (max-width: 400px) {
+  .avatar.difficulty-level {
+    height: 90px;
+    width: 90px;
   }
 }
 
@@ -285,5 +329,16 @@ ul.symbol-row {
       width: 50px;
     }
   }
+
+  .avatar.difficulty-level {
+    height: 80px;
+    width: 80px;
+  }
+
+  .button.circle {
+    right: -12px;
+  }
+
+
 }
 

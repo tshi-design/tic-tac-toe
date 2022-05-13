@@ -1,3 +1,5 @@
+
+
 .logo {
   max-width: 140px;
 }
@@ -31,7 +33,14 @@
     height: 100px;
     width: 100px;
     border: 2px solid $white;
-    padding: 10px;
+
+    &.animal {
+      padding: 10px;
+    }
+
+    &.robot {
+      padding: 2px;
+    }
 
     &.active {
       border: 4px solid $yellow;
@@ -53,9 +62,12 @@
 .symbol {
   width: 60px;
   background: $white;
-  padding: 4px;
   border-radius: 50%;
   border: 3px solid $white;
+
+&.animal {
+  padding: 4px;
+}
 
 
   &:hover {
@@ -63,25 +75,4 @@
     border-color: $yellow;
   }
 
-  &.indicator {
-    position: absolute;
-    width: 55px;
-    height: 55px;
-    top: -15px;
-    right: -16px;
-    display: flex;
-
-    &.active {
-      border: 3px solid $yellow;
-    }
-
-    &.inactive {
-      background: $primary-inactive;
-      border-color: $primary-inactive;
-
-      img {
-        opacity: 0.7;
-      }
-    }
-  }
 }
