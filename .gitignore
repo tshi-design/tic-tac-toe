@@ -1,3 +1,8 @@
 .idea
-node_modules
 .DS_Store
+node_modules
+.sass-cache
+scss/main.css
+scss/main.css.map
+dist/css/main.css.map
+*.log

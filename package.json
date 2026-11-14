@@ -1,15 +1,20 @@
 {
   "name": "ttt",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Tic-tac-toe UI prototype",
+  "private": true,
   "scripts": {
-    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+    "sass": "sass --watch scss/main.scss:dist/css/main.css",
+    "sass:build": "sass scss/main.scss:dist/css/main.css",
+    "serve": "npx --yes serve dist -l 8080",
+    "dev": "npx --yes concurrently -k \"npm run sass\" \"npm run serve\"",
+    "start": "npm run sass:build && npm run serve"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "node-sass": "^7.0.1"
+  "devDependencies": {
+    "concurrently": "^9.1.2",
+    "sass": "^1.85.1"
   }
 }
